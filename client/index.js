@@ -4,8 +4,7 @@ import { Provider } from "react-redux";
 import { Router } from "react-router-dom";
 import { loadableReady } from "@loadable/component";
 import StyleContext from "isomorphic-style-loader/StyleContext";
-import store from "./config/store";
-import History from "./config/history";
+import { store, history } from "../config";
 import App from "./App";
 
 const insertCss = (...styles) => {
@@ -17,9 +16,9 @@ const insertCss = (...styles) => {
 loadableReady(() => {
     console.log("Load Ready >>>");
     hydrate(
-        <Provider store={store}>
+        <Provider store={store(window)}>
             <StyleContext.Provider value={{ insertCss }}>
-                <Router history={History}>
+                <Router history={history()}>
                     <App/>
                 </Router>
             </StyleContext.Provider>

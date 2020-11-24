@@ -5,7 +5,11 @@ import * as bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import ServeWeb from "./helpers/ServeWeb";
 
-require("dotenv").config();
+const envConfig = require("dotenv").config();
+
+if (envConfig.error) {
+    throw envConfig.error;
+}
 const { createProxyMiddleware } = require("http-proxy-middleware");
 const compression = require("compression");
 

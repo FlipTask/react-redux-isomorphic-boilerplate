@@ -1,7 +1,7 @@
 import { createBrowserHistory } from "history";
 import appConfig from "./appConfig";
 
-const history = createBrowserHistory({
+const history = () => createBrowserHistory({
     basename: appConfig.appBaseName
 });
 
