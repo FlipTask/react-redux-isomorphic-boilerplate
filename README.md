@@ -1,6 +1,6 @@
 [![CircleCI](https://circleci.com/gh/dev-ashishk/ssr-stream-setup.svg?style=shield)](https://circleci.com/gh/circleci/circleci-docs)
 
-# SSR-STREAM-SETUP
+# react-redux-isomorphic-boilerplate
 
 ### Features
 
