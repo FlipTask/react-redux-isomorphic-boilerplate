@@ -2,7 +2,7 @@
 
 # SSR-STREAM-SETUP
 
-### Features/
+### Features
 
 - Docker `(docker-engine >=v19.x)`
 - Express ` >= v4.x`
@@ -26,7 +26,7 @@ Steps to follow
 1. Clone ssr-stream-setup
 2. Change the current directory to `ssr-stream-setup`
 ```
-cd ssr-stream-setup
+cd react-redux-isomorphic-boilerplate
 ```
 3. Run the install `npm install`
 
